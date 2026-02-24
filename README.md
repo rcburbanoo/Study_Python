@@ -1,2 +1,1 @@
-# Study_Python
-pruebas
+Aquí estrán algunos archivos para prueba y estudio
