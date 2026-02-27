@@ -15,3 +15,22 @@ def dividir(a,b):
     else:
         return a / b
     
+def calcular(a, operador, b):
+    # Validar que el operador sea válido
+    if operador not in ["+", "-", "*", "/"]:
+        return "Operador no válido, inserte +, -, *, /"
+    
+    try:
+        if operador == "+":
+            return a+b
+        elif operador == "-":
+            return a-b  
+        elif operador == "*":
+            return a*b      
+        elif operador == "/":
+            return a/b
+    except ZeroDivisionError as e:
+        return "No se puede dividir por cero"
+    except TypeError as e:
+        return "Los operandos deben ser números"
+    
